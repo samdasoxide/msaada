@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="csstransforms no-csstransforms3d csstransitions"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>{% block title %}{% endblock %}-Msaada</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css">
+    
+	<script type="text/javascript" src="../static/js/jquery.js"></script>
+	<script type="text/javascript" src="../static/js/function.js"></script>
+	<script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../static/bootstrap/jquery.js"></script>
+</head>
+<body>
+<div id="duration" class="homeheader animated fadeIn"></div>
+<div id="wrap">
+	<header>
+		<div class="inner relative">
+			<a id="logo"  class="animated rollIn" href="#"><img  src="../static/images/logosmall.png" alt="msaada logo"></a>
+			<a id="msaada"  class="animated zoomIn" href="#">Msaada</a>
+			<a id="menu-toggle" class="button dark" href="#"><i class="fa fa-reorder"></i></a>
+			<nav id="navigation">
+			{% block navbar %}
+			
+			{% endblock %}
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>	
+</div> 
+
+<div class="container-fluid">
+	{% block content %}
+	{% endblock %}
+</div>
+
+<div id="wrap">
+	<footer >
+		<ul alignment="center">
+		<li><a href="#"><i class="fa fa-3x fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fa fa-3x fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-3x fa-youtube"></i></a></li>
+		</ul>
+	</footer>
+</div>
+
+</body>   
+
+</html>

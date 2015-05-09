@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block navbar %}
+				<ul id="main-menu" >
+					<li class="current-menu-item"><a href="{{ url_for('index') }}" ><i class="fa fa-home"></i>  Home</a></li>
+					<li ><a href="{{ url_for('about') }}" ><i class="fa fa-tasks"></i> About us</a></li>
+					<li ><a href="{{ url_for('profiles') }}"><i class="fa fa-user"></i>  Profiles</a></li>
+					<li class="parent" >
+						<a href="{{ url_for('features') }}" ><i class="fa fa-plus"></i>  Features</a>
+						<ul class="sub-menu">
+							<li><a href="{{ url_for('donate') }}"><i class="fa fa-credit-card"></i>  Donate</a></li>
+							<li><a href="{{ url_for('campaign') }}"><i class="fa fa-lg fa-bullhorn"></i>  Campaign</a></li>
+							<li><a href="{{ url_for('gifts') }}"><i class="fa fa-lg fa-gift"></i>  Gifts</a></li>
+						</ul>
+					</li>
+					<li><a href="{{ url_for('contacts') }}"><i class="fa fa-phone"></i>   Contact</a></li>
+				</ul>
+{% endblock %}
+
+{% block content %}
+	<div class="jumbotron">
+			<h2>Welcome to msaaada</h2>
+			<p>In msaaada we help you get funds through a ussd shortcode that we will provide.
+			This will help everyone to get donations in an easy to access platform
+			through all kinds of mobile devieces.</p>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3 class="panel-title">Together we build</h3>
+				</div>
+				<div class="panel-body">About togther we build</div>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3 class="panel-title">Love msaada</h3>
+				</div>
+				<div class="panel-body">about love msaada</div>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Join us</h3>
+				</div>
+				<div class="panel-body">About join us</div>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3 class="panel-title">Initiatives</h3>
+				</div>
+				<div class="panel-body">About initiatives</div>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

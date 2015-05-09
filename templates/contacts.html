@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Donate{% endblock %}
+{% block navbar %}
+				<ul id="main-menu" >
+					<li ><a href="{{ url_for('index') }}" ><i class="fa fa-home"></i>  Home</a></li>
+					<li ><a href="{{ url_for('about') }}" ><i class="fa fa-tasks"></i> About us</a></li>
+					<li ><a href="{{ url_for('profiles')}}"><i class="fa fa-user"></i>  Profiles</a></li>
+					<li class="parent current-menu-item" >
+						<a href="{{ url_for('features')}}" ><i class="fa fa-plus"></i>  Features</a>
+						<ul class="sub-menu">
+
+							<li><a href="{{ url_for('donate')}}"><i class="fa fa-credit-card"></i>  Donate</a></li>
+							<li><a href="{{ url_for('campaign')}}"><i class="fa fa-lg fa-bullhorn"></i>  Campaign</a></li>
+							<li><a href="{{ url_for('gifts')}}"><i class="fa fa-lg fa-gift"></i>  Gifts</a></li>
+						</ul>
+						
+					</li>
+					<li class="current-item"><a href="{{ url_for('contacts')}}"><i class="fa fa-phone"></i>   Contact</a></li>
+				</ul>
+{% endblock %}
+
+{% block content %}
+	<div class="jumbotorn">
+		<h2>Contact <i class="fa fa-5x fa-phone"></i></h2>
+		<h3>Here is our contact information</h3>
+	</div>
+{% endblock %}

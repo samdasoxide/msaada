@@ -1,0 +1,16 @@
+<a href="#" ><i class="icon-plus"></i>Features</a>
+						<ul class="sub-menu">
+							<li><a href="#"><i class="icon-wrench"></i> Elements</a></li>
+							<li><a href="#"><i class="icon-credit-card"></i>  Pricing Tables</a></li>
+							<li><a href="#"><i class="icon-gift"></i> Icons</a></li>
+							<li>
+								<a class="parent" href="#"><i class="icon-file-alt"></i> Pages</a>
+								<ul class="sub-menu" >
+									<li><a href="#">Full Width</a></li>
+									<li><a href="#">Left Sidebar</a></li>
+									<li><a href="#">Right Sidebar</a></li>
+									<li><a href="#">Double Sidebar</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
