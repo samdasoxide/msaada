@@ -7,6 +7,6 @@ MarkupSafe==0.23
 WTForms==2.0.2 
 Werkzeug==0.10.4
 gunicorn==19.3.0
-itsdangarous==0.24
+itsdangerous==0.24
 nose==1.3.6
 virtualenv==12.1.1
