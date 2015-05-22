@@ -5,7 +5,7 @@
 					<li ><a href="{{ url_for('index') }}" ><i class="fa fa-home"></i>  Home</a></li>
 					<li ><a href="{{ url_for('about') }}" ><i class="fa fa-tasks"></i> About us</a></li>
 					<li ><a href="{{ url_for('profiles')}}"><i class="fa fa-user"></i>  Profiles</a></li>
-					<li class="parent current-menu-item" >
+					<li class="parent" >
 						<a href="{{ url_for('features')}}" ><i class="fa fa-plus"></i>  Features</a>
 						<ul class="sub-menu">
 
@@ -15,7 +15,7 @@
 						</ul>
 						
 					</li>
-					<li class="current-item"><a href="{{ url_for('contacts')}}"><i class="fa fa-phone"></i>   Contact</a></li>
+					<li class="current-menu-item"><a href="{{ url_for('contacts')}}"><i class="fa fa-phone"></i>   Contact</a></li>
 				</ul>
 {% endblock %}
 

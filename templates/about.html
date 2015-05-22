@@ -4,7 +4,7 @@
 {% block navbar %}
 				<ul id="main-menu" >
 					<li ><a href="{{ url_for('index') }}" ><i class="fa fa-home"></i>  Home</a></li>
-					<li class="current-item"><a href="{{ url_for('about') }}" ><i class="fa fa-tasks"></i> About us</a></li>
+					<li class="current-menu-item"><a href="{{ url_for('about') }}" ><i class="fa fa-tasks"></i> About us</a></li>
 					<li ><a href="{{ url_for('profiles')}}"><i class="fa fa-user"></i>  Profiles</a></li>
 					<li class="parent" >
 						<a href="{{ url_for('features')}}" ><i class="fa fa-plus"></i>  Features</a>
@@ -22,5 +22,65 @@
 	<div class="jumbotron">
 		<h2>About</h2>
 		<h3>This is the about page for Msaada</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">What is M-saada</h3>
+				</div>
+				<div class="panel-body">"Msaada" is a Swahili word that stands for providing aid. We assist organization through our revolutionary system, which provides micro-donation. We help in automating payment or donation platform for organization's across borders</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Msaada logo</h3>
+				</div>
+				<div class="panel-body">The logo</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">How they help</h3>
+				</div>
+				<div class="panel-body">We have seen the problem with Kenyan elections. It is therefore through this revolutionary design we want to create a platform to support the our new Kenyan leaders. Using a unique ussd code and software platform that will allow the citizens of Kenya to donate from their phones and empower them to do more. Msaada is an African idea for the African people.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row"  >
+		<div class="col-md-3">
+			<img src="../static/images/square.jpg" class="img-circle pad" align="center" alt="Rounded Image"><br>
+			<p><h3><small><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTed malumbe</b></small></h3></p><br>
+			<p style="margin-left: 4em;"><em>Planning</em></p>
+			<p style="margin-left: 2em;"><i>ted@msaada.com</i></p>
+			<p style="margin-left: 3em;"><b>+254123123</b></p>
+
+		</div>
+		<div class="col-md-3" id="linez">
+			<img src="../static/images/square.jpg" class="img-circle" alt="Rounded Image">
+			<p ><h3><small><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNelson Oyugi</b></small></h3></p><br>
+			<p style="margin-left: 3em;"><em>Management</em></p>
+			<p style="margin-left: 1em;"> <i>nelson@msaada.com</i></p>
+			<p style="margin-left: 3em;"><b>+254123123</b></p>
+		</div>
+		<div class="col-md-3">
+			<img src="../static/images/square.jpg" class="img-circle" alt="Rounded Image">
+			<p><h3><small><b>&nbsp&nbsp&nbsp&nbsp&nbspCraig Odhiambo</b></small></h3></p><br>
+			<p style="margin-left: 5em;"><em>Legal</em></p>
+			<p ><i>&nbsp&nbspcraigidore@msaada.com</i></p>
+			<p style="margin-left: 3em;"><b>+254123123</b></p>
+		</div>
+		<div class="col-md-3">
+			<img src="../static/images/square.jpg" class="img-circle" alt="Rounded Image">
+			<p><h3><small><b>&nbsp&nbsp&nbsp&nbsp&nbspSammy Ramdas</b></small></h3></p><br>
+			<p style="margin-left: 3em;"><em>Lead Developer</em></p>
+			<p style="margin-left: 2em;"><i>sam@msaada.com</i></p>
+			<p style="margin-left: 3em;"><b>+254123123</b></p>
+		</div>
 	</div>
 {% endblock %}
